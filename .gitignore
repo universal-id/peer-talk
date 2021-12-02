@@ -203,3 +203,6 @@ src/Ipfs.Engine.xml
 
 # codecov
 coverage.opencover.xml
+
+# DSStore
+.DS_Store

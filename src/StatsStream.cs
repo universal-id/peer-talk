@@ -176,7 +176,7 @@ namespace PeerTalk
                 }
                 return n;
             }
-            catch (Exception) when (cancellationToken != null && cancellationToken.IsCancellationRequested)
+            catch (Exception) when (cancellationToken.IsCancellationRequested)
             {
                 // eat it.
                 return 0;
@@ -201,7 +201,7 @@ namespace PeerTalk
                 }
 
             }
-            catch (Exception) when (cancellationToken != null && cancellationToken.IsCancellationRequested)
+            catch (Exception) when (cancellationToken.IsCancellationRequested)
             {
                 // eat it.
             }

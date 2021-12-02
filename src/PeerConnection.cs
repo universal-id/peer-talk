@@ -297,7 +297,7 @@ namespace PeerTalk
             // Ignore any disposal exceptions.
             try
             {
-                Stream?.Dispose();
+                if (Stream != null) await Stream.DisposeAsync().ConfigureAwait(false);
             }
             catch (Exception)
             {
