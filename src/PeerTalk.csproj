@@ -26,10 +26,14 @@
     <IncludeSymbols>True</IncludeSymbols>
     <PackageLicense>https://github.com/richardschneider/peer-talk/blob/master/LICENSE</PackageLicense>
     <PackageProject>https://github.com/richardschneider/peer-talk</PackageProject>
-    <PackageIcon>https://github.com/universal-id/peer-talk/blob/master/ipfs-icon.png</PackageIcon>
+    <PackageIcon>ipfs-icon.png</PackageIcon>
     <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' ">true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+      <None Include="..\ipfs-icon.png" Pack="true" PackagePath=""/>
+  </ItemGroup>
 
   <PropertyGroup>
     <!-- Optional: Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
@@ -60,5 +64,6 @@
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard14'">
     <PackageReference Include="System.Net.NameResolution" Version="4.3.0.0" />
   </ItemGroup>
+
 
 </Project>
