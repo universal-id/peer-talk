@@ -24,9 +24,9 @@
     <Copyright>© 2018-2019 Richard Schneider</Copyright>
     <PackageTags>ipfs peer-to-peer libp2p p2p distributed web</PackageTags>
     <IncludeSymbols>True</IncludeSymbols>
-    <PackageLicenseUrl>https://github.com/richardschneider/peer-talk/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/richardschneider/peer-talk</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/ipfs/logo/blob/master/platform-icons/osx-menu-bar.png</PackageIconUrl>
+    <PackageLicense>https://github.com/richardschneider/peer-talk/blob/master/LICENSE</PackageLicense>
+    <PackageProject>https://github.com/richardschneider/peer-talk</PackageProject>
+    <PackageIcon>https://github.com/universal-id/peer-talk/blob/master/ipfs-icon.png</PackageIcon>
     <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' ">true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
